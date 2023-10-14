@@ -29,40 +29,18 @@ insert into cliente(idcliente, nome, cpf, rg, data_nascimento, genero,	profissao
 values(	3,	'Carlos', '87732323227', '55463', '1967-10-01', 'M', 'Pedreiro', 'Brasileira',	'Rua das Laranjeiras', '300',	'Apart.', 'Cto', 'Canoinhas', 'SC');
 
 insert into cliente(idcliente, nome, cpf, rg, data_nascimento, genero,	profissao,	nacionalidade, logradouro,	numero,	complemento, bairro, municipio, uf)
-values(	4,	'Adriana', '12321222122', '98777', '1989-09-01', 'F', 'Jornalista', 'Brasileira',	'Rua das Limas', '240',	'Casa', 'São Pedro', 'Poro Vitória', 'PR');
-
-insert into cliente(idcliente, nome, cpf, rg, data_nascimento, genero,	profissao,	nacionalidade, logradouro,	numero,	complemento, bairro, municipio, uf)
-values(	5,	'Amanda', '99982838828', '28382', '1991-03-04', 'F', 'Jorn.', 'Italiana',	'Av. Central', '100',	null, 'São Pedro', 'General Carneiro', 'PR');
-
-insert into cliente(idcliente, nome, cpf, rg, data_nascimento, genero,	profissao,	nacionalidade, logradouro,	numero,	complemento, bairro, municipio, uf)
-values(	6,	'Angelo', '99982828181', '12323', '2000-01-01', 'M', 'Professor', 'Brasileira',	'Av. Beira Mar', '300',	null, 'Centro', 'São Paulo', 'SP')
-
-insert into cliente(idcliente, nome, cpf, rg, data_nascimento, genero, profissao, nacionalidade, logradouro, numero, complemento, bairro, municipio, UF)
-values (7,'Anderson',null,null,null,'M','Prof.','Italiano', 'Av. Brasil','100','Apartamento','Santa Rosa','Rio de Janeiro','SP');
-
-insert into cliente(idcliente, nome, cpf, rg, data_nascimento, genero, profissao, nacionalidade, logradouro, numero, complemento, bairro, municipio, UF)
-values (8,'Camila','9998282828',null,'2001-10-10','F','Professora','Norte-Americana','Rua Central','4333',null,'Centro','Porto Alegre','RS');
-
-insert into cliente(idcliente, nome, cpf, rg, data_nascimento, genero, profissao, nacionalidade, logradouro, numero, complemento, bairro, municipio, UF)
-values (9,'Cristiano',null,null,null,'M','Estudante','Alemã','Rua do Centro','877','Casa','Centro','Porto Alegre','RS');
-
-insert into cliente(idcliente, nome, cpf, rg, data_nascimento, genero, profissao, nacionalidade, logradouro, numero, complemento, bairro, municipio, UF)
-values (10, 'Fabricio','8828282828','32323',null,'M','Estudante','Brasileiro',null,null,null,null, 'PU','SC');
-
-insert into cliente(idcliente, nome, cpf, rg, data_nascimento, genero, profissao, nacionalidade, logradouro, numero, complemento, bairro, municipio, UF)
-values (11,'Fernanda',null,null,null,'F',null,'Brasileira',null,null,null,null,'Porto União','SC');
-
-insert into cliente(idcliente, nome, cpf, rg, data_nascimento, genero, profissao, nacionalidade, logradouro, numero, complemento, bairro, municipio, UF)
-values (12,'Gilmar','88881818181','888','2000-02-10','M','Estud.',null,'Rua das Laranjeiras','200',null,'C. Nova','Canoinhas','SC');
-
-insert into cliente(idcliente, nome, cpf, rg, data_nascimento, genero, profissao, nacionalidade, logradouro, numero, complemento, bairro, municipio, UF)
-values (13,'Diego','1010191919','111939',null,'M','Professor','Alemão','Rua Central','455','Casa','Cidade N.','São Paulo','SP');
-
-insert into cliente(idcliente, nome, cpf, rg, data_nascimento, genero, profissao, nacionalidade, logradouro, numero, complemento, bairro, municipio, UF)
-values (14,'Jeferson',null,null,'1983-07-01','M',null,'Brasileiro',null,null, null,null,'União da Vitória','PR');
-
-insert into cliente(idcliente, nome, cpf, rg, data_nascimento, genero, profissao, nacionalidade, logradouro, numero, complemento, bairro, municipio, UF)
-values (15,'Jessica',null,null,null,'F','Estudante', null, null, null, null, null, 'União da Vitória','PR');
+values
+	(4,	'Adriana', '12321222122', '98777', '1989-09-01', 'F', 'Jornalista', 'Brasileira',	'Rua das Limas', '240',	'Casa', 'São Pedro', 'Poro Vitória', 'PR'),
+	(5,	'Amanda', '99982838828', '28382', '1991-03-04', 'F', 'Jorn.', 'Italiana',	'Av. Central', '100',	null, 'São Pedro', 'General Carneiro', 'PR'),
+	(6,	'Angelo', '99982828181', '12323', '2000-01-01', 'M', 'Professor', 'Brasileira',	'Av. Beira Mar', '300',	null, 'Centro', 'São Paulo', 'SP'),
+	(7,'Anderson',null,null,null,'M','Prof.','Italiano', 'Av. Brasil','100','Apartamento','Santa Rosa','Rio de Janeiro','SP'),
+	(9,'Cristiano',null,null,null,'M','Estudante','Alemã','Rua do Centro','877','Casa','Centro','Porto Alegre','RS'),
+	(10, 'Fabricio','8828282828','32323',null,'M','Estudante','Brasileiro',null,null,null,null, 'PU','SC'),
+	(11,'Fernanda',null,null,null,'F',null,'Brasileira',null,null,null,null,'Porto União','SC'),
+	(12,'Gilmar','88881818181','888','2000-02-10','M','Estud.',null,'Rua das Laranjeiras','200',null,'C. Nova','Canoinhas','SC'),
+	(13,'Diego','1010191919','111939',null,'M','Professor','Alemão','Rua Central','455','Casa','Cidade N.','São Paulo','SP'),
+	(14,'Jeferson',null,null,'1983-07-01','M',null,'Brasileiro',null,null, null,null,'União da Vitória','PR'),
+	(15,'Jessica',null,null,null,'F','Estudante', null, null, null, null, null, 'União da Vitória','PR');
 
 -- Consultas Simples
 
@@ -135,3 +113,79 @@ WHERE data_nascimento BETWEEN '2000-01-01' AND '2002-01-01';
 -- 14. O nome do cliente e o logradouro, número, complemento, bairro, município e UF concatenado de todos os clientes
 
 SELECT nome, logradouro ||', '|| numero ||', '|| complemento ||', '|| bairro ||', '|| municipio ||' - '|| uf AS "Endereço" FROM cliente
+
+INSERT INTO cliente (idcliente, nome, cpf, rg, data_nascimento, genero, profissao, nacionalidade, logradouro, numero, complemento, bairro, municipio, uf)
+VALUES
+	(16, 'Maicon', '12349596421', '1234', '1965-10-10', 'F', 'Empresário', null, null, null, null, null, 'Florianópolis', 'PR'),
+	(17, 'Getúlio', null, '4631', null, 'F', 'Estudante', 'Brasileira', 'Rua Central', '343', 'Apartamento', 'Centro', 'Curitiba', 'SC'),
+	(18, 'Sandra', null, null, null, 'M', 'Professor', 'Italiana', null, '12', 'Bloco A', null, null, null);
+
+
+-- 1. Altere os dados do cliente Maicon
+--	 a. O CPF para 45390569432
+
+UPDATE cliente
+SET cpf = '45390569432'
+WHERE idcliente = 16;
+
+-- 	b. O gênero para M
+
+UPDATE cliente
+SET genero = 'M'
+WHERE idcliente = 16;
+
+-- 	c. A nacionalidade para Brasileira
+
+UPDATE cliente
+SET nacionalidade = 'Brasileira'
+WHERE idcliente = 16;
+
+-- 	d. O UF para SC
+
+UPDATE cliente
+SET uf = 'SC'
+WHERE idcliente = 16;
+
+-- 3. Altere os dados do cliente Getúlio
+-- a. A data de nascimento para 01/04/1978
+
+UPDATE cliente
+SET data_nascimento = '1978-04-01'
+WHERE idcliente = 17;
+
+-- b. O gênero para M
+
+UPDATE cliente
+SET genero = 'M'
+WHERE idcliente = 17;
+
+-- 4. Altere os dados da cliente Sandra
+-- a. O gênero para F
+
+UPDATE cliente
+SET genero = 'F'
+WHERE idcliente = 18;
+
+-- b. A profissão para Professora
+
+UPDATE cliente
+SET profissao = 'Professora'
+WHERE idcliente = 18;
+
+-- c. O número para 123
+
+UPDATE cliente
+SET numero = '123'
+WHERE idcliente = 18;
+
+-- 5. Apague o cliente Maicon
+
+DELETE FROM cliente
+WHERE idcliente = 16;
+
+-- 6. Apague a cliente Sandra
+
+DELETE FROM cliente
+WHERE idcliente = 18;
+
+SELECT * FROM cliente
