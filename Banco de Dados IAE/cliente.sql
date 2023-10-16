@@ -189,3 +189,81 @@ DELETE FROM cliente
 WHERE idcliente = 18;
 
 SELECT * FROM cliente
+
+--
+
+alter table cliente
+add idprofissao integer,
+add constraint fk_cli_idprofissao foreign key (idprofissao) references profissao (idprofissao);
+
+update cliente
+set idprofissao =
+	case
+		when idcliente in (1, 9, 10, 12, 15, 17) then 1
+		when idcliente = 2 then 2
+		when idcliente = 3 then 3
+		when idcliente in (4, 5) then 4
+		when idcliente in (6, 7, 8, 13) then 5
+	end;
+
+alter table cliente
+drop column profissao;
+
+alter table cliente
+add idnacionalidade integer,
+add constraint fk_cli_idnacionalidade foreign key (idnacionalidade) references nacionalidade (idnacionalidade);
+
+select * from cliente;
+
+update cliente
+set idnacionalidade = 
+	case 
+		when idcliente in (1, 2, 3, 4, 6, 10, 11, 14, 16) then 1
+		when idcliente in (5, 7) then 2
+		when idcliente = 8 then 3
+		when idcliente in (9, 13) then 4
+	end;
+	
+alter table cliente
+drop column nacionalidade;
+
+select idcliente, complemento from cliente;
+
+alter table cliente
+add column idcomplemento integer,
+add constraint fk_cmpl_idcomplemento foreign key (idcomplemento) references complemento (idcomplemento);
+
+update cliente
+set idcomplemento = 
+	case
+		when idcliente in (1, 4, 9, 13) then 1
+		when idcliente in (2, 3, 7, 17) then 2
+	end;
+
+alter table cliente
+drop column complemento;
+
+select * from cliente
+
+alter table cliente
+add idbairro integer,
+add constraint fk_bairro_idbairro foreign key (idbairro) references bairro (idbairro)
+
+select idcliente, bairro from cliente
+
+update cliente
+set idbairro = 
+	case
+		when idcliente in (1, 12, 13) then 1
+		when idcliente in (2, 3, 6, 8, 9, 17) then 2
+		when idcliente in (4, 5) then 3
+		when idcliente = 7  then 4
+	end;
+	
+select * from cliente
+
+alter table cliente
+drop column bairro
+
+select distinct (municipio) from cliente
+
