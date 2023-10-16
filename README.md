@@ -4,10 +4,10 @@ Bem-vindo ao meu repositório de projetos em SQL! Aqui você encontrará uma col
 
 ## Projetos
 
-1. **Sistema de Gerenciamento de Biblioteca**  
-   Um sistema simples para gerenciar livros em uma biblioteca. O projeto inclui esquema de banco de dados, consultas SQL para inserção, recuperação e atualização de informações, além de alguns exemplos de consultas complexas.
+1. **Banco de Dadados de Pedidos**  
+   Um baco de dados simples para gerenciar pedidos de clientes. O projeto inclui consultas SQL para inserção, recuperação e atualização de informações, além de alguns exemplos de consultas.
 
-   [Link para o projeto](./biblioteca)
+   [Link para o projeto](./bd_pedidos)
 
 ## Como usar
 
